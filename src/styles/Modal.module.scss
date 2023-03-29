@@ -1,0 +1,89 @@
+.modalContainer {
+  position: relative;
+
+
+  .bgModal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(13, 22, 42, 0.43);
+    transition: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+
+  .modalWrapper {
+    width: 400px;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+
+
+      .formWrapper {
+        border-radius: 0.5rem;
+        background-color: rgb(255 255 255 /1);
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        transition-property: all;
+        padding: 30px;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+
+          h1 {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 5px 0;
+            color: rgb(55 65 81 / 1);
+          }
+
+          .checkbox {
+            display: flex;
+            align-items: center;
+          }
+
+          input {
+            box-shadow: 0 1px 3px -2px rgb(0 0 0 / 0.1);
+            border-width: 1px;
+            width: 300px;
+            padding: 10px;
+            height: 20px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        .btnContainer {
+          display: flex;
+          gap: 10px;
+          padding: 30px 0 0 0;
+          justify-content: end;
+
+          button {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+
+            &:hover {
+              background: #a8a8a8;
+            }
+          }
+        }
+      }
+
+  }
+}
+

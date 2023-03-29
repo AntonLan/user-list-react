@@ -1,0 +1,60 @@
+.userList {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+  button {
+    width: 100px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+
+    &:hover {
+      background: #a8a8a8;
+    }
+  }
+
+  .user {
+    padding: 10px;
+    border: 1px solid gray;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .userInfo {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 200;
+      }
+
+    }
+
+    .btnWrapper {
+      display: flex;
+      gap: 10px;
+
+      button {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+
+        &:hover {
+          background: #a8a8a8;
+        }
+      }
+    }
+  }
+}
